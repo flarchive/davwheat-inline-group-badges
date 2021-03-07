@@ -1,0 +1,45 @@
+{
+  "name": "davwheat/inline-group-badges",
+  "description": "Move group badges to be inline with usernames.",
+  "keywords": [
+    "flarum",
+    "groups"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": ">=0.1.0-beta.15 <0.1.0-beta.17"
+  },
+  "authors": [
+    {
+      "name": "David Wheatley",
+      "email": "hi@davwheat.dev",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/davwheat/flarum-ext-inline-group-badges/issues",
+    "source": "https://github.com/davwheat/flarum-ext-inline-group-badges",
+    "forum": "https://discuss.flarum.org/26376"
+  },
+  "autoload": {
+    "psr-4": {
+      "Davwheat\\InlineGroupBadges\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "davwheat Inline Group Badges",
+      "category": "theme",
+      "icon": {
+        "image": "icon.svg",
+        "backgroundColor": "#51c5dd"
+      }
+    }
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,less,md,php,yml}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,jsx,tsx,json,less,md,php,yml}\"",
+    "format:staged": "cross-env git-format-staged --formatter \"prettier --stdin-filepath '{}'\" \"*.js\" \"*.jsx\" \"*.ts\" \"*.tsx\" \"*.md\" \"*.less\" \"*.json\" \"*.php\" \"*.svg\""
+  }
+}
